@@ -22,17 +22,17 @@ mydb = mysql.connector.connect(
 
 # ............................................Fetch data ...............................................................
 
-#
-# mycursor = mydb.cursor()
-# mycursor.execute('SELECT * FROM users');
-#
-# users = mycursor.fetchall()
-#
-# for user in users:
-#     # print(users)
-#     print('user_id', "=", user[0])
-#     print('username', "=", " "  + user[1])
-#     print('password', "=", " " + user[2])
+
+mycursor = mydb.cursor()
+mycursor.execute('SELECT * FROM users');
+
+users = mycursor.fetchall()
+
+for user in users:
+    # print(users)
+    print('user_id', "=", user[0])
+    print('username', "=", " "  + user[1])
+    print('password', "=", " " + user[2])
 
 
 
