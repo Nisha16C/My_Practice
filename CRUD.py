@@ -14,6 +14,7 @@ mycursor = mydb.cursor()
 def main():
     st.title("CRUD Operations With MySQL");
 
+
     #Display options for CRUD Operations
     option=st.sidebar.selectbox("Select an Operation",("Create", "Read", "Update", "Delete"))
 
