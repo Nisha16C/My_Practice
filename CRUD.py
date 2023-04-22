@@ -1,5 +1,5 @@
-import mysql.connector
 import streamlit as st
+import mysql.connector
 
 mydb = mysql.connector.connect(
     host='localhost',
